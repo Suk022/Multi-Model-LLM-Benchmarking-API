@@ -1,4 +1,8 @@
 # Multi-Model LLM Chat Service Backend
+<<<<<<< HEAD
+=======
+
+>>>>>>> 728e81a (Create venv and move into backend directory)
 This project is a minimal FastAPI service that lets you chat with two open-source LLMs (Mistral-7B and Llama-3.1-8B Instruct) via OpenRouter.ai. It supports model switching, logs latency and token counts, and persists logs in a CSV file.
 
 ## Features
@@ -16,6 +20,21 @@ This project is a minimal FastAPI service that lets you chat with two open-sourc
 ## Setup
 1. **Clone the repo**
 2. **Install dependencies**
+<<<<<<< HEAD
+```bash
+   pip install -r requirements.txt
+```
+3. **Set up environment variables**
+   - Get your key from [https://openrouter.ai/](https://openrouter.ai/)
+   - Create a .env file in the project root:
+```bash
+   OPENROUTER_API_KEY=your_openrouter_api_key_here
+```
+   
+## Running the Service
+```bash
+   uvicorn main:app --reload
+=======
    ```bash
    pip install -r requirements.txt
    ```
@@ -29,12 +48,17 @@ This project is a minimal FastAPI service that lets you chat with two open-sourc
 ## Running the Service
 ```bash
 uvicorn main:app --reload
+>>>>>>> 728e81a (Create venv and move into backend directory)
 ```
 - The API will be available at `http://127.0.0.1:8000`
 
 ## API Usage
 ### Health Check
+<<<<<<< HEAD
+   ```http
+=======
 ```http
+>>>>>>> 728e81a (Create venv and move into backend directory)
 GET /health
 ```
 - Returns `{ "status": "ok" }`
@@ -67,13 +91,15 @@ pytest
 ```
 - Runs simple tests for the health and chat endpoints.
 
+<<<<<<< HEAD
+=======
 ## For Evaluator
 
 - **Public API URL:** [https://your-app-name.onrender.com](https://your-app-name.onrender.com)  
 - **Supported models:** "mistral" and "llama"
 - **How to test:**
 
-  - Use the interactive Swagger UI at `/docs`:
+  - Or use the interactive Swagger UI at `/docs`:
   [https://your-app-name.onrender.com/docs](https://your-app-name.onrender.com/docs)
   
   - Use the `/chat` endpoint with a POST request. The `model` field must be either `"mistral"` or `"llama"` (not both):
@@ -83,30 +109,37 @@ pytest
     "model": "mistral"
   }
   ```
-
+  or
+  ```json
+  {
+    "prompt": "Hello, who are you?",
+    "model": "llama"
+  }
+  ```
 
   ### Testing with Postman
 
-  - Open Postman and create a new `POST` request.
-  - Set the request URL to your deployed API, e.g.:
+  1. Open Postman and create a new `POST` request.
+  2. Set the request URL to your deployed API, e.g.:
      ```
      https://promptcue-llm-chat-api.onrender.com/chat
      ```
-  - Go to the "Body" tab, select "raw" and choose "JSON" as the format.
-  - Enter the following JSON (choose either model):
+  3. Go to the "Body" tab, select "raw" and choose "JSON" as the format.
+  4. Enter the following JSON (choose either model):
      ```json
      {
        "prompt": "Hello, who are you?",
        "model": "mistral"
      }
      ```
-  - Click "Send".
-  - You should receive a JSON response with the model's reply, latency, token counts, etc.
+  5. Click "Send".
+  6. You should receive a JSON response with the model's reply, latency, token counts, etc.
 
   You can also use the `/docs` endpoint in your browser for interactive API testing.
 - **No local setup required.**
 - **Logs:** All interactions are logged to `chat_logs.csv` (available in the repo after running a few prompts).
 
+>>>>>>> 728e81a (Create venv and move into backend directory)
 
 ## Example Log Analysis
 

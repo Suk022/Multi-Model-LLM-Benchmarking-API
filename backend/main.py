@@ -10,7 +10,6 @@ import pytz
 
 load_dotenv()
 
-
 app = FastAPI()
 
 class ChatRequest(BaseModel):
@@ -24,6 +23,7 @@ def root():
 @app.get("/health")
 def health_check():
     return {"status": "ok"}
+
 
 @app.post("/chat")
 def chat(request: ChatRequest):
@@ -52,6 +52,7 @@ def chat(request: ChatRequest):
 
     now = datetime.now(pytz.timezone('Asia/Kolkata'))  
     formatted_timestamp = now.strftime("%H:%M %B %d,%Y")
+
     return {
         "response": model_reply,
         "latency": latency,
