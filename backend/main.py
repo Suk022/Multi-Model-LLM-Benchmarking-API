@@ -2,9 +2,9 @@ import os
 from fastapi import FastAPI, Query, HTTPException
 from pydantic import BaseModel
 from dotenv import load_dotenv
-from openrouter_client import send_prompt
+from .openrouter_client import send_prompt
 import time
-from logger import log_interaction
+from .logger import log_interaction
 from datetime import datetime
 import pytz
 
