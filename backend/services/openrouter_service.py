@@ -1,18 +1,18 @@
 import requests
-from config import OPENROUTER_API_KEY, OPENROUTER_API_URL, MODEL_MAP
+from config import settings
 
 def send_prompt(prompt: str, model: str):
-    if model not in MODEL_MAP:
+    if model not in settings.MODEL_MAP:
         raise ValueError(f"Model '{model}' not supported.")
     
     headers = {
-        "Authorization": f"Bearer {OPENROUTER_API_KEY}",
+        "Authorization": f"Bearer {settings.OPENROUTER_API_KEY}",
         "Content-Type": "application/json"
     }
     data = {
-        "model": MODEL_MAP[model],
+        "model": settings.MODEL_MAP[model],
         "messages": [{"role": "user", "content": prompt}]
     }
-    response = requests.post(OPENROUTER_API_URL, headers=headers, json=data)
+    response = requests.post(settings.OPENROUTER_API_URL, headers=headers, json=data)
     response.raise_for_status()
     return response.json()
