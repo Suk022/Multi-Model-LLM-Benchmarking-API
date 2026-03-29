@@ -16,7 +16,7 @@ async def run_benchmark(prompt: str, model_keys: List[str], timeout: int) -> Lis
                 model_key=model_key,
                 api_name="",
                 status="error",
-                error_message=f"Model {model_key} not found in registry"
+                error_message="model key not found in registry"
             )
         
         try:
