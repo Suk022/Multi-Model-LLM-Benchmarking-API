@@ -1,8 +1,7 @@
 import csv
 import os
 from datetime import datetime
-
-LOG_FILE = "chat_logs.csv"
+from config import LOG_FILE
 
 FIELDNAMES = ["timestamp", "model", "prompt", "response", "latency", "prompt_tokens", "response_tokens"]
 
@@ -20,4 +19,4 @@ def log_interaction(model, prompt, response, latency, prompt_tokens, response_to
             "latency": latency,
             "prompt_tokens": prompt_tokens,
             "response_tokens": response_tokens
-        }) 
+        })
