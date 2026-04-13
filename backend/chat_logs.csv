@@ -1,286 +1,114 @@
-timestamp,model,prompt,response,latency,prompt_tokens,response_tokens
-2025-07-15T17:32:37.699997,llama,Tell in three points how you and mistral LLM is different?,"I can be instructed and or search for information about a topic. I should not be considered as a reliable source for information. Mistral language model (LLM) may have advanced features, such as Ask Me Anything and Can you explain, that are not available in other models. Mistral's Ask Me Anything feature, for instance, uses a question answering technique that it trained on entity-specific knowledge to generate responses to a wide variety of questions.",6.492154598236084,11,74
-2025-07-15T17:33:43.532111,llama,How to secure an internship in this highly competitive tech market?,"Securing an internship in a competitive tech market can be challenging, but here are some tips to increase your chances:
+2026-03-31T16:34:01.744269+00:00,llama,How do I configure my database file in my FastAPI application so that it handles concurrent DB requests?,"To configure your database file to handle concurrent database requests in a FastAPI application, you'll need to use a library that supports asynchronous database connections and provides tools for managing concurrent queries. One popular choice is `asyncpg` for PostgreSQL or `aiosqlite` for SQLite.
 
-1. **Build a strong foundation in tech skills**: Focus on developing a broad range of skills in programming languages, data structures, algorithms, and software development principles.
-2. **Gain relevant experience**: Participate in personal projects, hackathons, or coding challenges to demonstrate your skills and experience.
-3. **Networking is key**: Attend industry events, conferences, and meetups to connect with professionals and potential employers.
-4. **Create a strong online presence**: Establish a strong LinkedIn profile and build a personal website or blog to showcase your skills and projects.
-5. **Tailor your resume and cover letter**: Customize your application materials to the specific internship and company you're applying for.
-6. **Prepare for technical interviews**: Brush up on data structures, algorithms, object-oriented programming, and other technical concepts commonly asked in tech interviews.
-7. **Practice whiteboarding**: Practice explaining complex technical concepts on a whiteboard to improve your communication skills.
-8. **Showcase your skills through coding challenges**: Participate in coding challenges like LeetCode, HackerRank, or CodeWars to demonstrate your skills.
-9. **Consider internships at startups or smaller companies**: Smaller companies may offer more opportunities for growth and responsibility.
-10. **Stay organized and persistent**: Keep track of deadlines, follow up with companies, and stay positive and motivated throughout the application process.
-11. **Get referral**: Ask friends, family, or mentors who work in the industry to refer you to relevant job openings.
-12. **Develop a growth mindset**: Demonstrate a desire to learn and grow in your applications and during the application process.
+Here's a step-by-step guide on how to do it:
 
-Additionally, here are some team-based approaches that can be beneficial:
+### 1. Install the Required Library
 
-1. **Join online communities**: Participate in online forums like GitHub, Reddit (e.g., r/cscareerquestions), or Stack Overflow to connect with other tech enthusiasts and stay up-to-date on industry trends.
-2. **Form a study group or bootcamp**: Join a group of like-minded individuals to learn together, work on projects, and practice coding challenges.
-3. **Contribute to open-source projects**: Collaborate on open-source projects to demonstrate your teamwork and coding skills.
-4. **Participate in hackathons and coding competitions**: Join online or in-person hackathons to network, build your skills, and demonstrate your creativity.
+First, you need to install the library that supports asynchronous database connections. For PostgreSQL, you'll install `asyncpg`:
 
-Some popular platforms to find internships in the tech industry include:
-
-1. **Indeed**: One of the most popular job search websites.
-2. **Glassdoor**: Offers online profiles, salary information, and company reviews.
-3. **Angela DS**: A platform for data science and AI internships.
-4. **We Work Remotely**: A job board that lists remote job opportunities, including software development internships.
-5. **LinkedIn**: A professional networking site that can be an invaluable resource for job searching.
-
-Remember, it's a competitive job market, and it may take time and perseverance to land an internship.",6.817793846130371,11,451
-2025-07-15T17:34:30.329729,llama,What is the integration formula of u*v ?,The integration formula for u*v is called the convolution theorem of integration.,3.5547986030578613,8,12
-2025-07-15T17:36:06.839611,llama,Which Routing model is best for model swtiching?,"Model switching, also known as model selection or model-based routing, is a technique used in computer networks to optimize routing decisions based on the properties of the traffic being carried by the network. There are several routing models that can be used for model switching, each with its own strengths and weaknesses. Here are some of the most popular ones:
-
-1. **IS-IS (Intermediate System to Intermediate System)**: IS-IS is a link-state routing protocol that can be used for model switching. It is known for its flexibility and scalability, making it a good choice for large networks.
-2. **OSPF (Open Shortest Path First)**: OSPF is another link-state routing protocol that can be used for model switching. It is widely used in large networks and is known for its high scalability and reliability.
-3. **ECMP (Equal-Cost Multipath)**: ECMP is a routing model that can be used for model switching. It allows multiple paths to be used simultaneously, providing high availability and scalability.
-4. **BGP (Border Gateway Protocol)**: BGP is a path-vector routing protocol that can be used for model switching. It is widely used in the internet and is known for its high scalability and flexibility.
-5. **SRP (Shortest Path Routing Protocol)**: SRP is a routing model that can be used for model switching. It uses a shortest path algorithm to determine the best path for forwarding packets.
-6. **JOS (Joint Optimization of Switching)**: JOS is a routing model that combines link-state and path-vector routing protocols to optimize routing decisions.
-
-The best routing model for model switching depends on the specific requirements of your network. Here are some factors to consider:
-
-* **Network size and complexity**: Larger networks with many nodes and links may benefit from more scalable routing protocols like IS-IS, OSPF, or BGP.
-* **Traffic patterns**: Networks with high volumes of traffic may benefit from routing protocols that can handle large amounts of traffic, such as ECMP or SRP.
-* **Network topology**: Networks with complex topologies may benefit from routing protocols that can handle multiple paths and network segments, such as IS-IS or OSPF.
-* **Scalability and reliability**: Networks that require high availability and reliability may benefit from routing protocols like BGP or ECMP.
-* **Implementation complexity**: Networks with limited resources or expertise may benefit from simpler routing protocols like SRP or JOS.
-
-Ultimately, the best routing model for model switching will depend on the specific requirements and constraints of your network.",11.706434726715088,8,402
-2025-07-15T17:37:24.503255,mistral,"hey, who are you? and How are you better than other LLMs?"," I'm an AI model trained to provide information and assistance. I'm here to help answer your questions, solve problems, and engage in conversations on a wide range of topics.
-
-As for how I differ from other Language Learning Models (LLMs), it's important to note that each model has its unique characteristics, training data, and capabilities. My training data is vast and varied, including books, websites, and a multitude of conversations, ensuring a comprehensive understanding of diverse topics. I'm continually learning and improving based on interactions, thanks to fine-tuning and continuous updates.
-
-In addition, my design enables me to maintain context within a conversation, which can lead to more coherent and helpful responses. It's essential to understand that no model is always perfect, but I strive to provide the best and most accurate assistance possible.
-
-I'm glad to help you out, and I'm looking forward to chatting with you! Let me know if you have any questions or need help with something.",4.81047797203064,12,161
-2025-07-15T17:39:06.125679,mistral,When will Gta 6 release?," Unfortunately, Rockstar Games has not yet announced a release date for Grand Theft Auto 6 (GTA 6). The last main entry in the series, Grand Theft Auto V, was released in 2013, and while there have been some rumors and speculation about GTA 6, nothing has been officially confirmed by Rockstar. It's important to note that game development timelines can be lengthy, especially for a game like GTA with its expansive world and content. It's best to stay tuned to official Rockstar sources for any future updates.",4.731443166732788,5,87
-2025-07-15T17:41:01.442141,mistral,"How LLM come with long, descriptive type, detailed respone for a prompt in just a sec?"," I'm able to provide a relatively detailed response in a short amount of time due to the sophistication of the model I'm based on. This specific type of model, known as a transformer, can process information in parallel, which allows it to quickly understand and generate responses to prompts. The more data it has been trained on, the better it becomes at understanding and generating contextually appropriate responses. However, the speed and quality of the response may still vary depending on the complexity of the question and the resources available at the time.",4.605768442153931,16,93
-2026-03-21T20:46:31.357790,llama,What is async in API?,"**Async in API: Understanding the Concept**
-
-In the context of APIs (Application Programming Interfaces), ""async"" refers to asynchronous operations. An asynchronous operation is a process that allows your API to respond to a request without blocking or waiting for the operation to complete.
-
-**What is Asynchronous Programming?**
-
-Asynchronous programming is a programming technique that allows your API to execute a task in the background without blocking the main thread or process. This way, your API can continue to handle other requests while the task is being executed.
-
-**Why Asynchronous Programming is useful in APIs?**
-
-1. **Improves performance**: By executing tasks in the background, your API can respond to requests quickly, even if it needs to perform resource-intensive operations.
-2. **Enhances scalability**: Asynchronous programming allows your API to handle multiple requests concurrently, making it more scalable.
-3. **Improves responsiveness**: Your API can continue to respond to user requests while executing tasks in the background.
-
-**Example of Asynchronous Programming in APIs**
-
-Suppose you're building an API that allows users to upload files. When a user uploads a file, your API needs to perform some background processing (e.g., compressing the file, adding metadata, etc.). If your API uses synchronous programming, it would block the main thread until the processing completes, which can lead to slow responses.
-
-However, if your API uses asynchronous programming, it can create a task to perform the background processing while responding to the user immediately. This approach ensures that your API remains responsive and can handle multiple requests concurrently.
-
-**Example Code**
-
-Here's a simplified example of asynchronous programming in a Node.js API using the `async/await` syntax:
-
-```javascript
-const express = require('express');
-const axios = require('axios');
-
-const app = express();
-
-app.post('/upload', async (req, res) => {
-  const file = req.file;
-  const taskId = await backgroundCompressFile(file);
-  res.json({ taskId });
-});
-
-async function backgroundCompressFile(file) {
-  // Simulate background processing
-  await new Promise((resolve) => setTimeout(resolve, 500));
-  // Compress the file
-  return file.filename;
-}
+```bash
+pip install asyncpg
 ```
 
-In this example, the `/upload` endpoint creates a task to compress the uploaded file using the `backgroundCompressFile` function, which runs asynchronously. The endpoint responds to the user immediately, while the background processing continues in the background.
+For SQLite, you would install `aiosqlite`:
 
-In summary, asynchronous programming is a crucial aspect of modern API development that enables your API to respond quickly to requests, handle concurrent requests, and maintain high performance.",1.9330811500549316,5,385
-2026-03-21T21:23:14.365566,llama,What is helmet,"A ""helmet"" can refer to different types of protective headgear, depending on the context. Here are a few examples:
+```bash
+pip install aiosqlite
+```
 
-1. **Bicycle or motorcycle helmet**: A helmet designed to protect the head from injury in case of a bike or motorcycle accident. It is made of lightweight yet strong materials, such as plastic or polycarbonate, and is designed to distribute the force of an impact across the helmet, rather than focusing it on a single point.
+### 2. Set Up Your Database Connection in FastAPI
 
-2. **Football (American) helmet**: A helmet that is a part of the protective gear worn by American football players. It is used to protect the player's head from injury during tackles, falls, and collisions with other players or the ground.
-
-3. **Hockey helmet**: A helmet worn by hockey players to protect their heads from collision with other players, the ice surface, or the puck.
-
-4. **Industrial safety helmet**: A hard hat, often used in construction or industrial settings to protect workers from falling objects, electrical hazards, or other workplace accidents.
-
-5. **Military helmet**: A protective helmet used in armed forces to safeguard the head from impacts, shrapnel, and other injuries sustained in conflict or combat situations.
-
-6. **Sports protective helmet**: This category includes helmets designed for sports like baseball, softball, soccer, lacrosse, rugby, and other contacts sports meant to protect the head from injury.
-
-7. **Police or riot helmet**: Designed for use by law enforcement or security personnel to protect their heads from injury during confrontations or when encountering dangerous situations.
-
-8. **Aviation helmet**: Worn by pilots and some aircrew members to protect their heads from the wind and other environmental factors during flight.",37.635931730270386,3,269
-2026-03-21T21:34:21.774155,llama,What is helmet?,"A helmet is a protective headgear that covers the head, usually made of hard plastic, metal, or other materials, designed to protect the wearer's head from impacts, injuries, or other types of harm. Helmets are commonly used in various settings and activities, including:
-
-1. **Motorcycling**: Helmets for motorcyclists are designed to protect the head from road accidents and falls.
-2. **Sports**: Helmets are used in various sports, such as:
-	* Football (helmet to protect the head from collision and impact)
-	* Hockey (helmet with a face mask to protect the face and head from sticks and sticks-carried projectiles)
-	* Baseball and softball (hitting helmets to protect the head from fast-moving balls)
-	* Lacrosse (helmets with a face mask to protect the face and head from sticks and sticks-carried balls)
-	* Equestrian sports ( helmets for horseback riding to protect the head from falls)
-	* Cycling (helmets to protect the head from falls and road hazards)
-3. **Workplace safety**: Helmets are required in various workplaces, such as:
-	* Construction sites (hard hats to protect against falling objects)
-	* Industrial settings (helmets to protect against hazardous materials and equipment)
-4. **Military and law enforcement**: Helmets are used to protect soldiers and law enforcement officers from head injuries in combat and high-risk situations.
-5. **Casual and recreational**: Helmets are also worn for casual activities, such as:
-	* Skiing and snowboarding (helmets to protect against head injuries from falls)
-	* Hang gliding and paragliding (helmets to protect against head and neck injuries)
-
-Helmets are designed to provide various levels of protection, including impact absorption, protection from penetration, and prevention of head movement during impact. Some helmets also feature additional safety features, such as ventilation systems, communication systems, and reflective materials for increased visibility.",6.651916027069092,3,289
-2026-03-29T19:52:19.497814,llama,Write a Python function to calculate fibonacci numbers,"Here's a Python function that calculates Fibonacci numbers using a recursive approach and memoization:
+You'll need to set up a database connection pool to handle multiple requests concurrently. Here's an example using `asyncpg` for PostgreSQL. This example assumes you have a `main.py` file for your FastAPI application.
 
 ```python
-def fibonacci(n, memo={}):
-    """"""
-    Calculate the nth Fibonacci number.
-    
-    Args:
-    n (int): The position of the Fibonacci number to calculate.
-    memo (dict, optional): A dictionary to store previously calculated Fibonacci numbers. Defaults to an empty dictionary.
-    
-    Returns:
-    int: The nth Fibonacci number.
-    """"""
-    
-    # Base cases
-    if n <= 0:
-        return 0
-    elif n == 1:
-        return 1
-    
-    # If the Fibonacci number is already calculated, return it
-    elif n in memo:
-        return memo[n]
-    
-    # Calculate the Fibonacci number
-    else:
-        result = fibonacci(n - 1, memo) + fibonacci(n - 2, memo)
-        
-        # Store the calculated Fibonacci number
-        memo[n] = result
-        
-        return result
+# main.py
+from fastapi import FastAPI
+from asyncpg import create_pool, Pool
+
+app = FastAPI()
+
+# Database connection settings
+PG_HOST = ""localhost""
+PG_PORT = 5432
+PG_user = ""myuser""
+PG_PASSWORD = ""mypassword""
+PG_DB = ""mydatabase""
+
+# Set up the database pool
+async def get_database():
+    return await create_pool(
+        user=PG_user,
+        password=PG_PASSWORD,
+        host=PG_HOST,
+        database=PG_DB,
+        port=PG_PORT
+    )
+
+# Now, inject the database pool into your API routes
+async def get_pools(app: FastAPI):
+    await get_database()
+    yield
+
+# Run this function as part of the app startup
+callbacks = [get_pools]
+
+@app.on_event(""startup"")
+async def startup_event():
+    pool = app.state.database
+    if pool is None:
+        pool = await create_pool(
+            user=PG_user,
+            password=PG_PASSWORD,
+            host=PG_HOST,
+            database=PG_DB,
+            port=PG_PORT
+        )
+        app.state.database = pool
+
+@app.on_event(""shutdown"")
+async def shutdown_event():
+    pool = app.state.database
+    if pool is not None:
+        await pool.close()
+
+# Example API route to demonstrate database connection usage
+@app.get(""/users/"")
+async def read_users(db: Pool = Depends(get_database)):
+    # Use the database connection pool as needed
+    return [{""id"": 1, ""name"": ""John""}]
 ```
 
-However, this recursive approach is not efficient for large n. A much more efficient approach is to use an iterative method:
+For SQLite using `aiosqlite`, the setup would be similar but adjusted for SQLite specifics.
+
+### 3. Implement Database Operations
+
+Now that you have a database pool set up, you can write database operations as asynchronous functions that send queries to the database pool. Here's an example:
 
 ```python
-def fibonacci(n):
-    """"""
-    Calculate the nth Fibonacci number.
-    
-    Args:
-    n (int): The position of the Fibonacci number to calculate.
-    
-    Returns:
-    int: The nth Fibonacci number.
-    """"""
-    
-    # Handle edge cases
-    if n <= 0:
-        return 0
-    elif n == 1:
-        return 1
-    
-    # Initialize variables
-    a, b = 0, 1
-    
-    # Calculate the Fibonacci number iteratively
-    for _ in range(2, n + 1):
-        a, b = b, a + b
-    
-    return b
+# Example database operation
+async def save_user(db: Pool, user: dict):
+    # Query building and execution is done here
+    async with db.acquire() as conn:
+        async with conn.transaction():
+            await conn.execute(
+                """"""
+                INSERT INTO users (name, email)
+                VALUES ($1, $2)
+                RETURNING id, name, email;
+                """""",
+                user[""name""],
+                user[""email""],
+            )
+            new_user = await conn.fetchrow(
+                ""SELECT id, name, email FROM users WHERE id = $1"",
+                user[""id""]
+            )
+            return new_user
+
+# Usage:
+@app.post(""/users/"")
+async def save_user_view(user: dict, db: Pool = Depends(get_database)):
+    return await save_user(db, user)
 ```
 
-Alternatively, you can use matrix exponentiation for an even more efficient approach:
-
-```python
-def multiply_matrices(a, b):
-    # Matrix multiplication using NumPy
-    import numpy as np
-    return np.dot(a, b)
-
-def matrix_power(a, n):
-    """"""
-    Calculate the square of the matrix [a b; b a].
-    
-    Args:
-    a (int): The top-left element of the matrix.
-    b (int): The top-right and bottom-left elements of the matrix.
-    n (int): The power to which the matrix should be raised.
-    
-    Returns:
-    int: The square of the matrix.
-    """"""
-    
-    # Handle edge cases
-    if n == 1:
-        return [[a, b], [b, a]]
-    elif n % 2 == 0:
-        half_power = matrix_power(a, n // 2)
-        return multiply_matrices(half_power, half_power)
-    else:
-        half_power = matrix_power(a, n // 2)
-        return multiply_matrices(multiply_matrices(half_power, half_power), [[a, b], [b, a]])
-
-def matrix_to_fibonacci(n):
-    """"""
-    Convert the Fibonacci recurrence relation into a matrix and raise it to the nth power.
-    
-    Args:
-    n (int): The position of the Fibonacci number to calculate.
-    
-    Returns:
-    int: The nth Fibonacci number.
-    """"""
-    
-    a = 1
-    b = 1
-    
-    # Matrix representation of the Fibonacci recurrence relation: [[1 1], [1 0]]
-    base_matrix = [[a, b], [b, a]]
-    
-    # Raise the base matrix to the nth power
-    result_matrix = matrix_power(a, n - 1)  # Adjust the power to get the correct result
-    
-    # Fibonacci number is the top-left element of the resulting matrix
-    return result_matrix[0][0]
-
-# This method is the most efficient approach, as matrix exponentiation has a time complexity of O(log n)
-matrix_power_one = matrix_to_fibonacci(10)
-print(matrix_power_one)
-```
-
-All of these approaches calculate the nth Fibonacci number, but matrix exponentiation provides the most efficient solution for large values of n.",47.716747522354126,8,477
-2026-03-29T19:53:31.326699,llama,what is string?,"In computer science, a **string** is a sequence of characters, which can include letters, numbers, and special characters. It is a fundamental data type used to represent a sequence of characters as a single entity. Think of a sentence, a word, or a sequence of characters like ""Hello, World!"" - that's a string.
-
-Here are some key characteristics of a string:
-
-1. **Characters**: A string is composed of one or more characters, which can be letters, digits (0-9), or special characters (like !, @, #, etc.).
-2. **Order matters**: In a string, the order of characters is important. ""Hello"" and ""olleH"" are two different strings since they contain characters in a different order.
-3. **Mutability**: Strings are often mutable, meaning you can change the characters in a string, like replacing one character with another, or inserting a character.
-4. **Null or empty**: A string can be empty (denoted by """" or ''), or can be a single character (e.g., 'a' or ""a"").
-5. **Typical uses**: Strings are used in many programming contexts, such as text processing, data storage, user input handling, and API interactions.
-
-Some common operations you might perform on a string include:
-
-1. **Concatenation**: Joining two or more strings together (e.g., ""Hello"" + ""World"" = ""HelloWorld"").
-2. **Indexing**: Accessing individual characters in a string (e.g., s[0] would give the first character of s, which is ""H"" if s is ""Hello"").
-3. **Searching**: Finding specific characters or patterns in a string (e.g., finding ""l"" in ""Hello"").
-
-Now, let's get a little more into programming with strings! Which aspect of strings would you like to explore further?",5.80096697807312,3,267
+This setup allows your FastAPI application to safely handle concurrent database requests by using a database connection pool that automatically manages the connections life cycle.",46.038244009017944,18,434

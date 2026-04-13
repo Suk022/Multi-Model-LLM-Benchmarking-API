@@ -1,6 +1,6 @@
 import csv
 import os
-from datetime import datetime
+from datetime import datetime, timezone
 from config import settings
 
 FIELDNAMES = ["timestamp", "model", "prompt", "response", "latency", "prompt_tokens", "response_tokens"]
@@ -12,7 +12,7 @@ def log_interaction(model, prompt, response, latency, prompt_tokens, response_to
         if not file_exists:
             writer.writeheader()
         writer.writerow({
-            "timestamp": datetime.utcnow().isoformat(),
+            "timestamp": datetime.now(timezone.utc).isoformat(),
             "model": model,
             "prompt": prompt,
             "response": response,
