@@ -129,7 +129,7 @@ FastAPI, SQLAlchemy 2.0, asyncpg, Pydantic v2, httpx, PostgreSQL
 ## Setup
 
 ```bash
-git clone <repo>
+git clone https://github.com/Suk022/Multi-Model-LLM-Benchmarking-API.git
 pip install -r requirements.txt
 ```
 
