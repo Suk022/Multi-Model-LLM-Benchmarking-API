@@ -145,25 +145,6 @@ uvicorn main:app --reload
 
 Docs at `http://127.0.0.1:8000/docs`.
 
----
-
-## Known Limitations
-
-**Rate limits** — free tier models 429 frequently under parallel load. 
-Retry logic: 2 retries on 429, backoff 3s then 6s. Doesn't eliminate 
-failures, just reduces them.
-
-**Migrations** — using `create_all()` on startup, not Alembic. 
-Schema changes require manual table drops in development.
-
-**Cost data** — all models stubbed at `0.0` (free tier). 
-`cost_calculator.py` is wired up; update rates when switching to 
-paid models.
-
-**Caching** — not yet implemented. Repeated identical prompts re-hit 
-the API. Redis-backed cache is the intended upgrade path.
-
----
 
 ## Deployment
 
